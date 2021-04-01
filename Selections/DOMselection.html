@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selection</title>
+    <style>
+        * {
+            border: 2px solid #dedede;
+            padding: 15px;
+            margin: 15px;
+        }
+        
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            max-width: 600px;
+            margin: 30px auto;
+            font-family: sans-serif;
+            color: #333;
+        }
+    </style>
+</head>
+<!-- DOM Selection Method
+    1. document.getElmentById()
+        DOM akan mencari element yang mempunyai atribut Id
+    2. document.getElemnetsTagName()
+        DOM akan mencari element-element yang memiliki Tag Name
+     3. document.getElementsByClassName()
+        DOM akan mencari element-element yang memiliki atribut class
+    4. document.querySelector()
+    5. document.querySelectorAll()
+        kedua method diatas itu sama, yaitu DOM akan mencari selectro yang ada di css, karna selector itu berada di css.
+-->
+
+<body>
+    <h1 id="judul">Hello World</h1>
+    <div id="container">
+        <section id="a">
+            <p class="p1">paragraf 1</p>
+            <a href="http://instagram.com/abdulwahiid8">Instagram Sandhika Galih</a>
+            <p class="p2">paragraf 2</p>
+            <p class="p3">paragraf 3</p>
+        </section>
+        <section id="b">
+            <p>paragraf 4</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

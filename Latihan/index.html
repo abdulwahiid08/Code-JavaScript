@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan DOM</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            text-align: center;
+            margin-top: 200px;
+        }
+        .ubahBackground {
+            background-color: salmon;
+        }
+        .ubahBackground2 {
+            background-color: lightgreen;
+        }
+        .Warna {
+            width: 25px;
+            height: 25px;
+            margin: 10px auto;
+            border: 2px solid rgb(36, 35, 35);
+            border-radius: 50%;
+        }
+        .Merah {
+            background-color: red;
+        }
+        .Hijau {
+            background-color: green;
+        }
+        .Biru {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <button type="button" class="tombol">Click 1x</button>
+    
+    <br> 
+    <br>
+    
+    <!-- Membuat Sslider Warna -->
+    <div class="Warna Merah"></div>
+        <input type="range" name="sliderMerah" min="0" max="255">
+    
+    
+    <div class="Warna Hijau"></div>
+        <input type="range" name="sliderHijau" min="0" max="255">
+    
+
+    <div class="Warna Biru"></div>
+        <input type="range" name="sliderBiru" min="0" max="255">
+
+    <script src="main.js"></script>
+</body>
+</html>
